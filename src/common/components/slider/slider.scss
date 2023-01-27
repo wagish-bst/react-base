@@ -1,0 +1,45 @@
+.slider {
+  @import "../../scss";
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+
+  // Chrome
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    & {
+      -webkit-appearance: none;
+      overflow: hidden;
+      height: 1rem;
+      background-color: var(--color-white);
+      box-shadow: 1px 1px 4px var(--color-accent);
+    }
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      border: 0.2rem solid var(--color-accent);
+      background-color: var(--color-accent);
+
+      box-shadow: -100.5rem 0 0 100rem var(--color-accent);
+
+      transition: box-shadow 0.2s ease-in-out;
+      position: relative;
+    }
+  }
+  // // Firefox
+  // &::-moz-range-progress {
+  //   background-color: #43e5f7;
+  // }
+  // &::-moz-range-track {
+  //   background-color: #9a905d;
+  // }
+  // // IE
+  // &::-ms-fill-lower {
+  //   background-color: #43e5f7;
+  // }
+  // &::-ms-fill-upper {
+  //   background-color: #9a905d;
+  // }
+}

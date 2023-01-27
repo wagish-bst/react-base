@@ -1,0 +1,45 @@
+.label {
+  @import "../../scss";
+  @mixin baseLabel() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  @mixin defaultLabel() {
+    border-radius: 0.8em;
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+  @mixin primaryLabel() {
+    border: none;
+    background: var(--color-accent);
+    color: var(--color-white);
+  }
+  @mixin secondaryLabel() {
+    border-radius: 0.8em;
+    background: var(--color-white);
+    color: var(--color-accent);
+  }
+  @mixin dangerLabel() {
+    border-radius: 0.8em;
+    background: var(--color-white);
+    color: var(--color-additional-error);
+  }
+
+  @include baseLabel();
+  &.default {
+    @include defaultLabel();
+  }
+  &.primary {
+    @include primaryLabel();
+  }
+  &.secondary {
+    @include secondaryLabel();
+  }
+  &.danger {
+    @include dangerLabel();
+  }
+}

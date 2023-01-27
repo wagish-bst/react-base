@@ -1,0 +1,17 @@
+.toggle {
+  @import "../../scss";
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  // .toggle-label {
+  //   margin-left: 0.8rem;
+  // }
+}

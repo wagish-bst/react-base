@@ -1,0 +1,109 @@
+.button {
+  @import "../../scss";
+  .rotate {
+    @include rotate(spin 1s linear infinite);
+  }
+  @mixin baseButton() {
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-direction: row;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    padding: 0rem 2.4rem;
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  @mixin smallButton() {
+    border-radius: 0.4rem;
+    height: 2.4rem;
+    @include body_overline_strong();    
+    .btn-icon {
+      margin-right: 0.5rem;
+      @include setImageSize(1.5rem, 1.5rem);
+    }
+  }
+  @mixin mediumButton() {
+    border-radius: 0.6rem;
+    height: 3.6rem;
+    @include body_small_strong();    
+    .btn-icon {
+      margin-right: 0.6rem;
+      @include setImageSize(1.8rem, 1.8rem);
+    }
+  }
+  @mixin defaultButton() {
+    border-radius: 0.8rem;
+    height: 4.4rem;
+    @include body_medium_strong();
+    .btn-icon {
+      margin-right: 0.7rem;
+      @include setImageSize(2.1rem, 2.1rem);
+    }
+  }
+  @mixin largeButton() {
+    border-radius: 1rem;
+    height: 5.6rem;
+    @include body_body_strong();
+    .btn-icon {
+      margin-right: 0.9rem;
+      @include setImageSize(2.7rem, 2.7rem);
+    }
+  }
+
+  @mixin primaryButton() {
+    border: none;
+    background: var(--color-accent);
+    color: var(--color-white);
+    box-shadow: 0rem 0.8rem 1.6rem rgba(0, 0, 0, 0.1);
+    &:hover {
+      background-color: var(--color-accent-hover);
+    }
+    &:disabled {
+      background-color: var(--color-light-400);
+      color: var(--color-light-100);
+    }
+  }
+  @mixin secondaryButton() {
+    border: 0.1rem solid var(--color-accent);
+    background: var(--color-white);
+    color: var(--color-accent);
+    &:hover {
+      color: var(--color-accent-hover);
+    }
+    &:disabled {
+      &:disabled {
+        color: var(--color-light-100);
+        border: 0.1rem solid var(--color-light-100);
+      }
+    }
+  }
+
+  @include baseButton();
+  &.small {
+    @include smallButton();
+  }
+  &.medium {
+    @include mediumButton();
+  }
+  &.default {
+    @include defaultButton();
+  }
+  &.large {
+    @include largeButton();
+  }
+
+  &.primary {
+    @include primaryButton();
+  }
+  &.secondary {
+    @include secondaryButton();
+  }
+}

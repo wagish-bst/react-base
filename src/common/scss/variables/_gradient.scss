@@ -1,0 +1,33 @@
+$gradient-1: linear-gradient(
+  180deg,
+  var(--gradient-1-color-1) 0%,
+  var(--gradient-1-color-2) 100%
+);
+
+$gradient-2: linear-gradient(
+  180deg,
+  var(--gradient-2-color-1) 0%,
+  var(--gradient-2-color-2) 100%
+);
+
+$gradient-glass: linear-gradient(
+    180deg,
+    var(--gradient-glass-color-1) 0%,
+    var(--gradient-glass-color-2) 100%
+  ),
+  linear-gradient(
+    0deg,
+    var(--gradient-glass-color-3),
+    var(--gradient-glass-color-3)
+  );
+
+$gradient-glass-error: linear-gradient(
+    180deg,
+    var(--gradient-glass-error-color-1) 0%,
+    var(--gradient-glass-error-color-2) 100%
+  ),
+  linear-gradient(
+    0deg,
+    var(--gradient-glass-error-color-3),
+    var(--gradient-glass-error-color-3)
+  );

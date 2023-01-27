@@ -1,0 +1,15 @@
+.checkbox {
+  @import "../../scss";
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  .checkbox-label {
+    margin-left: 0.8rem;
+  }
+}

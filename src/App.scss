@@ -1,0 +1,12 @@
+body {
+  @import "./common/scss";
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  .test-image {
+    height: 10rem;
+    // @include setImageSize(20rem, 20rem);
+  }
+  .test-label {
+    @include setImageSize(20rem, 20rem);
+  }
+}

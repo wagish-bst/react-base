@@ -1,0 +1,36 @@
+@mixin setImageSize($width, $height) {
+  width: $width;
+  height: $height;
+  background-size: $width $height;
+}
+@mixin setImageUrl($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+@mixin setImage($width, $height, $url) {
+  @include setImageSize($width, $height);
+  @include setImageUrl($url);
+}
+
+@mixin rotate($props) {
+  -webkit-animation: $props;
+  -moz-animation: $props;
+  animation: $props;
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+}

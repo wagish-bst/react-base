@@ -1,0 +1,49 @@
+{
+  "--color-accent": "rgba(255, 66, 165, 1)",
+  "--color-accent-hover": "rgba(255, 51, 146, 1)",
+
+  "--color-dark-900": "rgba(11, 2, 35, 1)",
+  "--color-dark-800": "rgba(31, 22, 55, 1)",
+  "--color-dark-700": "rgba(51, 42, 75, 1)",
+  "--color-dark-600": "rgba(71, 62, 95, 1)",
+
+  "--color-base": "rgba(91, 82, 115, 1)",
+  "--color-light-400": "rgba(121, 112, 145, 1)",
+  "--color-light-300": "rgba(141, 132, 165, 1)",
+  "--color-light-200": "rgba(161, 152, 185, 1)",
+  "--color-light-100": "rgba(181, 172, 205, 1)",
+
+  "--color-surface": "rgba(245, 245, 245, 1)",
+  "--color-background": "rgba(235, 235, 235, 1)",
+  "--color-white": "rgba(255, 255, 255, 1)",
+  "--color-black": "rgba(0, 0, 0, 1)",
+  
+  "--color-logo-purple": "rgba(76, 71, 137, 1)",
+  "--color-logo-blue": "rgba(81, 165, 201, 1)",
+  "--color-logo-green": "rgba(57, 139, 77, 1)",
+  "--color-logo-light-green": "rgba(179, 214, 97, 1)",
+  
+  "--color-additional-warning": "rgba(222, 90, 72, 1)",
+  "--color-additional-error": "rgba(243, 54, 33, 1)",
+  "--color-additional-link": "rgba(3, 151, 235, 1)",
+  "--color-additional-info": "rgba(238, 227, 217, 1)",
+  "--color-additional-caution": "rgba(255, 195, 42, 1)",
+  "--color-additional-success": "rgba(103, 195, 187, 1)",
+
+  "--color-overlay-dark": "rgba(11, 2, 35, 0.7)",
+
+
+  "--gradient-1-color-1":"rgba(81, 165, 201, 1)",
+  "--gradient-1-color-2":"rgba(255, 67, 166, 1)",
+
+  "--gradient-2-color-1":"rgba(255, 67, 166, 1)",
+  "--gradient-2-color-2":"rgba(212, 16, 119, 1)",
+
+  "--gradient-glass-color-1":"rgba(11, 2, 35, 0.48)",
+  "--gradient-glass-color-2":"rgba(11, 2, 35, 0.32)",
+  "--gradient-glass-color-3":"rgba(255, 255, 255, 0.3)",
+
+  "--gradient-glass-error-color-1":"rgba(84, 8, 8, 0.32)",
+  "--gradient-glass-error-color-2":"rgba(157, 11, 11, 0.48)",
+  "--gradient-glass-error-color-3":"rgba(255, 255, 255, 0.2)"  
+}
